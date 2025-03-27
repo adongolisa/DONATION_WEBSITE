@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Donate | Hope for Kids</title>
+    
+</head>
+<body>
+    <style>
+        /* Donation Page Styles */
+        /* 🌙 Dark Mode Styles */
+.dark-mode {
+    background: #000000;
+    color: white;
+}
+
+.dark-mode .testimonial {
+    background: #333;
+    color: white;
+    border-left-color: #ffcc00;
+}
+
+.dark-mode header {
+    background: #004d4d;
+}
+
+.dark-mode .nav-links a {
+    color: #ffcc00;
+}
+
+.dark-mode .donate-btn {
+    background: #ffcc00;
+    color: black;
+}
+
+.dark-mode .donate-btn:hover {
+    background: #ff9900;
+}
+
+.dark-mode .hero {
+    color: white;
+}
+
+.dark-mode .donate-link {
+    color: black;
+}
+
+        header {
+    background: #008080;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+.donation {
+    max-width: 600px;
+    margin: 50px auto;
+    padding: 20px;
+    text-align: center;
+    background: #f8f9fa;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.donation h1 {
+    font-size: 32px;
+    color: #008080;
+    margin-bottom: 10px;
+}
+
+.donation p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+/* Donation Form */
+#donation-form {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+label {
+    font-weight: bold;
+    text-align: left;
+}
+
+input, select {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+button {
+    background: #008080;
+    color: white;
+    font-size: 18px;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background: #006666;
+}
+
+/* Dark Mode for Donation Page */
+.dark-mode .donation {
+    background: #222;
+    box-shadow: 0 4px 8px rgba(255, 255, 255, 0.1);
+}
+
+.dark-mode label {
+    color: white;
+}
+
+.dark-mode input, 
+.dark-mode select {
+    background: #333;
+    color: white;
+    border: 1px solid #555;
+}
+
+.dark-mode button {
+    background: #ffcc00;
+    color: black;
+}
+
+.dark-mode button:hover {
+    background: #ff9900;
+}
+
+    </style>
+    <header>
+        <nav>
+            <div class="logo">HopeForKids</div>
+            <ul class="nav-links">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="about.html">About Us</a></li>
+                <li><a href="donate.html" class="donate-btn">Donate</a></li>
+            </ul>
+            <button id="theme-toggle">🌙</button>
+        </nav>
+    </header>
+
+    <main>
+        <section class="donation">
+            <h1>Make a Difference</h1>
+            <p>Every donation goes directly to food, education, and shelter for children in need.</p>
+            <form id="donation-form">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" required>
+
+                <label for="amount">Donation Amount (USD)</label>
+                <input type="number" id="amount" required>
+
+                <label for="payment">Payment Method</label>
+                <select id="payment">
+                    <option value="mpesa">MPesa</option>
+                    <option value="paypal">PayPal</option>
+                    <option value="bank">Bank Transfer</option>
+                </select>
+
+                <button type="submit">Donate Now</button>
+            </form>
+        </section>
+    </main>
+
+    <script>
+        document.getElementById("donation-form").addEventListener("submit", function(event) {
+            event.preventDefault();
+            alert("Thank you for your donation! ❤️");
+        });
+    </script>
+</body>
+</html>

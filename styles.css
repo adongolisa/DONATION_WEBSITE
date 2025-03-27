@@ -1,0 +1,164 @@
+/* Reset and Global Styles */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Arial', sans-serif;
+}
+
+body {
+    background-color: #ffffff;
+    color: #000000;
+    transition: background 0.3s, color 0.3s;
+}
+
+/* Header & Navbar */
+header {
+    background: #008080;
+    padding: 15px 20px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.logo {
+    font-size: 24px;
+    font-weight: bold;
+    color: white;
+}
+
+.nav-links {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.nav-links li {
+    display: inline;
+}
+
+.nav-links a {
+    text-decoration: none;
+    color: white;
+    font-size: 18px;
+    padding: 5px 10px;
+    transition: color 0.3s;
+}
+
+.nav-links a:hover {
+    color: #ffcc00;
+}
+
+.donate-btn {
+    background: #ffcc00;
+    padding: 8px 15px;
+    border-radius: 5px;
+    color: #333 !important;
+    font-weight: bold;
+}
+
+.donate-btn:hover {
+    background: #ff9900;
+}
+
+/* Theme Toggle */
+#theme-toggle {
+    background: none;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    color: white;
+}
+
+/* Hero Section */
+.hero {
+    text-align: center;
+    background: url('hero-image.jpg') no-repeat center center/cover;
+    color: black;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 40px;
+    margin-bottom: 15px;
+}
+
+.hero p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.donate-link {
+    background: #ffcc00;
+    padding: 12px 20px;
+    border-radius: 5px;
+    text-decoration: none;
+    color: black;
+    font-weight: bold;
+}
+
+.donate-link:hover {
+    background: #ff9900;
+}
+
+/* Testimonials */
+.testimonials {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.testimonials h2 {
+    font-size: 28px;
+    color: #008080;
+    margin-bottom: 20px;
+}
+
+.testimonial {
+    background: #fff;
+    padding: 20px;
+    margin: 15px auto;
+    width: 80%;
+    max-width: 600px;
+    border-left: 5px solid #008080;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* 🌙 Dark Mode Styles */
+.dark-mode {
+    background: #000000;
+    color: white;
+}
+
+.dark-mode .testimonial {
+    background: #333;
+    color: white;
+    border-left-color: #ffcc00;
+}
+
+.dark-mode header {
+    background: #004d4d;
+}
+
+.dark-mode .nav-links a {
+    color: #ffcc00;
+}
+
+.dark-mode .donate-btn {
+    background: #ffcc00;
+    color: black;
+}
+
+.dark-mode .donate-btn:hover {
+    background: #ff9900;
+}
+
+.dark-mode .hero {
+    color: white;
+}
+
+.dark-mode .donate-link {
+    color: black;
+}
